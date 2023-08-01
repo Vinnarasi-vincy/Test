@@ -1,0 +1,24 @@
+<h1>Employee List (Data from Employee Service)</h1>
+<br />
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Qualification</th>
+            <th>Salary</th>
+            <th>Experience Years</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of empList">
+<td>{{emp.id}}</td>
+<td>{{emp.name}}</td>
+<td>{{emp.designation}}</td>
+<td>{{emp.Qalification}}</td>
+<td>{{emp.salary}}</td>
+<td>{{emp.Expear}}</td>
+        </tr>
+    </tbody>
+</table>

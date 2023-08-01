@@ -1,0 +1,15 @@
+<h3>Example for @Input Decorator (Data passing from Parent to Child)</h3>
+
+<h1>Parent Component</h1>
+<h5 class="card-title">Home Component</h5>
+
+<p class="card-text">This is Parent component content.</p>
+<div class="form-control">
+    Enter your Input : 
+    <input type="text" style="width: 1200px;" [(ngModel)]="dnamicData" placeholder="Enter something" />
+</div>
+<p>{{dnamicData}}</p>
+<br /> <br /> <br /> <br /> <br /> <br />
+<hr />
+
+<app-prodct [dataFromParent]="mData" [dnamicData]="dnamicData"></app-prodct>

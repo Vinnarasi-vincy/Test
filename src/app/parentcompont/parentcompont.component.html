@@ -1,0 +1,9 @@
+<h3>Sample / Example for @Output Decorator (Data passing from Child to Parent)</h3>
+<h1>Parent Component</h1>
+<ul>
+    <li *ngFor="let item of items">{{item}}</li>
+  </ul>
+
+  <hr />
+  <br />   <br />   <br />   <br />
+<app-childcompont (newItemEvent)="addItem($event)"></app-childcompont>
